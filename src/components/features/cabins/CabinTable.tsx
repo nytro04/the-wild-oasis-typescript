@@ -1,6 +1,11 @@
 import Table from '../../common/Table'
+import { useCabins } from './useCabins'
 
 function CabinTable() {
+	const { isLoading, error, cabins } = useCabins()
+
+	console.log(isLoading, error, cabins)
+
 	const tableHeader: string[] = [
 		'',
 		'Cabin',
@@ -13,8 +18,8 @@ function CabinTable() {
 	return (
 		<Table columns={6}>
 			<Table.Header>
-				{tableHeader.map((header) => (
-					<div key={header}>{header}</div>
+				{tableHeader.map((header, index) => (
+					<div key={index}>{header}</div>
 				))}
 			</Table.Header>
 

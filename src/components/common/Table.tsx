@@ -49,12 +49,12 @@ function Row({ children }: ChildrenProps) {
 	)
 }
 
-function Body({ data, render }) {
-	return <div className='my-3 mx-0'>Row</div>
-}
+// function Body({ data, render }) {
+// 	return <div className='my-3 mx-0'>Row</div>
+// }
 
 Table.Header = Header
 Table.Row = Row
-Table.Body = Body
+// Table.Body = Body
 
 export default Table
