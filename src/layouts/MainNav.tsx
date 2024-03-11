@@ -48,7 +48,7 @@ function MainNav() {
 				{NavListings.map((list) => {
 					const Icon = list.icon
 					return (
-						<li>
+						<li key={list.name}>
 							<NavLink to={list.to} className='flex items-center gap-5'>
 								{/* TODO  */}
 								{/* className={({ isActive }) =>
